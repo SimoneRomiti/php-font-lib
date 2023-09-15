@@ -10,6 +10,29 @@ This library can be used to:
 
 This project was initiated by the need to read font files in the [DOMPDF project](https://github.com/dompdf/dompdf).
 
+### This version
+Version to temporary fix the `unpack(): Type n: not enough input, need 2, have 0`
+issue descibed in https://github.com/dompdf/php-font-lib/issues/47: 
+
+
+Add these lines to your `composer.json` to force replacing the original
+php-font-lib with this one
+```
+  "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/bmellink/php-font-lib"
+        },
+        ...
+    ],
+
+    "require": {
+        "bmellink/php-font-lib": "*",
+        ...
+    }
+```
+
+
 Usage Example
 -------------
 
