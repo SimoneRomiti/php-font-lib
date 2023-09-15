@@ -16,7 +16,7 @@
         }
     },
     "replace": {
-        "dompdf/php-font-lib": "*"
+        "phenx/php-font-lib": "*"
     },
     "autoload-dev": {
         "psr-4": {
