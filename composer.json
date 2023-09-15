@@ -6,7 +6,7 @@
     "license": "LGPL-3.0",
     "authors": [
         {
-            "name": "Fabien Ménager",
+            "name": "Bart Mellink & Fabien Ménager",
             "email": "fabien.menager@gmail.com"
         }
     ],
@@ -14,6 +14,9 @@
         "psr-4": {
             "FontLib\\": "src/FontLib"
         }
+    },
+    "replace": {
+        "dompdf/php-font-lib": "*"
     },
     "autoload-dev": {
         "psr-4": {
