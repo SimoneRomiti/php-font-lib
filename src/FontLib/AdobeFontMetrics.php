@@ -139,7 +139,7 @@ class AdobeFontMetrics {
       $this->endSection("CharMetrics");
 
       $kern = $font->getData("kern", "subtable");
-      $tree = is_array($kern) ? $kern["tree"] : null;
+      $tree = is_array($kern) && isset($kern["tree"]) ? $kern["tree"] : null;
 
       if (!$encoding && is_array($tree)) {
         $this->startSection("KernData");
